@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+}
+
+#container{
+    background-color: white;
+    margin: 14% 5%;
+    padding:5%;
+    padding-top: 34px;
+    border-radius: 5%;
+    border-bottom-right-radius:20% ;
+}
+
+#formContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 5px 0;
+    padding: 7px;
+    height: 35px;
+    
+}
+
+#break button{
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    margin-bottom: 35px;
+}
+
+svg{
+    background-color: hsl(259, 100%, 65%);
+    padding: 10px;
+    border-radius: 50%; 
+}
+
+
+#break hr{
+    position: relative;
+    top: 23px;
+    margin-top: 35px;
+}
+
+#break form{
+    margin:0 43%;
+    position: sticky;
+}
+
+#result p{
+    display: inline;
+}
+
+
+.inputContainer{
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#dayResult, #monthResult, #yearResult{
+    color:  hsl(259, 100%, 65%);
+}
+
+#result{
+    font-size: 50px;
+    font-weight: bolder;
+}
