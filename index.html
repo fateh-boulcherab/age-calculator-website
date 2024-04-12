@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Age calculator app</title>
@@ -14,31 +14,29 @@
     <div id="container">
         <form id="formContainer">
             <div class="inputContainer">
-              <label for="day">DAY</label>
-              <input type="number" min="1" max="31" id="day" placeholder="DD">
-              <p id="ggg"></p>
+              <label for="day" id="dayLabel">day</label>
+              <input type="number" min="1" max="31" id="day" placeholder="DD" required>
+              <p id="dayError"></p>
             </div>
             <div class="inputContainer">
-              <label for="month">MONTH</label>
-              <input type="number" min="1" max="12" id="month" placeholder="MM">
-              <p></p>
+              <label for="month" id="monthLabel">month</label>
+              <input type="number" min="1" max="12" id="month" placeholder="MM" required>
+              <p id="monthError"></p>
             </div>
             <div class="inputContainer">
-              <label for="year">YEAR</label>
-              <input type="number" min="1900" max="2023" id="year" placeholder="YY">
-              <p></p>
+              <label for="year" id="yearLabel">year</label>
+              <input type="number" min="1900" max="2024" id="year" placeholder="YY" required>
+              <p id="yearError"></p>
             </div>
         </form>
         <div id="break">
-            <hr>
-            <form action="">
-                <button onclick='calculateAge()'><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
-            </form>
+            <div class="hr"></div>
+            <button id="submit" onclick='calculateAge()'><img src="./assets/images/icon-arrow.svg" alt=""></button>
         </div>
         <div id="result">
-            <p id="yearResult">38 </p><p class="resultName">Years</p><br>
-            <p id="monthResult">4 </p><p class="resultName">Months</p><br>
-            <p id="dayResult">26 </p><p class="resultName">Days</p><br>
+            <div><span id="yearResult">--</span> years</div>
+            <div><span id="monthResult">--</span> months</div>
+            <div><span id="dayResult">--</span> days</div>
         </div>
     </div>
 </body>
